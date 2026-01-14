@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Penqn - IT Consultancy</title>
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet" />
+	<script id="tailwind-config">
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					colors: {
+						"primary": "#137fec",
+						"background-light": "#f6f7f8",
+						"background-dark": "#101922",
+					},
+					fontFamily: {
+						"display": ["Inter", "sans-serif"]
+					},
+					borderRadius: {
+						"DEFAULT": "0.25rem",
+						"lg": "0.5rem",
+						"xl": "0.75rem",
+						"full": "9999px"
+					},
+				},
+			},
+		}
+	</script>
+	<style>
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+
+		.material-symbols-outlined {
+			font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+		}
+	</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white transition-colors duration-300">
+	<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+		<div class="layout-container flex h-full grow flex-col">
+			<header
+				class="flex flex-col items-center justify-center border-b border-solid border-gray-200 dark:border-gray-800 px-10 py-8 bg-white dark:bg-background-dark">
+				<div class="flex flex-col items-center gap-6 max-w-[960px] w-full">
+					<div class="flex items-center gap-2 text-primary">
+						<div class="size-8">
+							<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+								<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V44Z"
+									fill-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h2 class="text-[#111418] dark:text-white text-2xl font-black leading-tight tracking-tight">
+							Penqn</h2>
+					</div>
+				</div>
+			</header>
+			<main class="flex flex-1 flex-col items-center">
+				<section class="w-full max-w-[1200px] px-6 py-20 @container">
+					<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-20">
+						<div class="flex flex-col gap-6">
+							<div class="flex flex-col gap-2">
+								<span class="text-primary font-bold tracking-wider text-sm uppercase">IT
+									Consultancy</span>
+								<h1
+									class="text-[#111418] dark:text-white text-5xl font-black leading-tight tracking-[-0.033em] lg:text-7xl">
+									Penqn
+								</h1>
+								<h2 class="text-[#111418] dark:text-white text-2xl font-bold leading-tight mt-2">
+									Engineering clarity for growing teams
+								</h2>
+								<p
+									class="text-[#617589] dark:text-gray-400 text-lg font-normal leading-relaxed mt-4 max-w-[500px]">
+									Methodical solutions for complex technical challenges. We provide refined IT
+									strategy with a focus on stability and professionalism.
+								</p>
+							</div>
+							<div class="flex gap-4 mt-4">
+								<a role="button" href="tel:+919946706406"
+									class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-all hover:bg-primary/90">
+									<span>Call</span>
+							</a>
+								<a role="button" href="https://wa.me/919946706406"
+									class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 border border-gray-300 dark:border-gray-700 bg-transparent text-[#111418] dark:text-white text-base font-bold transition-all hover:bg-gray-50 dark:hover:bg-gray-800">
+									<span>WhatsApp</span>
+						</a>
+							</div>
+						</div>
+						<div
+							class="relative w-full aspect-square md:aspect-auto md:h-[500px] overflow-hidden rounded-2xl shadow-2xl">
+							<img alt="Professional IT consultancy workspace with server architecture visualization"
+								class="w-full h-full object-cover"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS0tXl1JrfcEvO7rBKIlk-6EcFLDAhAIyFtP8bb6gqWG1rAO7NnRR6E_auCVHYQ3_xxrfroN5jIPgq1R8dkH72GZ0T1DAxsV2UuULTjXYG7jcOi1kH3jIbZxncFgOoHf2Ki5v1jD8rk-K7qMTwpqbXinGVuMuqgh_p3s--wJnVoLnj0qMuEpRygY7D6AdvErT7swr9XSSY-V-QCrp0C_TrLpJZZMsquAs-7Ae0zj-2zXz6V-pqIU0a4X_1BeIl4Z4vxFpAAcVqoZU" />
+						</div>
+					</div>
+				</section>
+				<div class="w-full max-w-[960px] border-t border-gray-100 dark:border-gray-800 mt-12">
+					<h4 class="text-[#617589] dark:text-gray-500 text-xs font-bold uppercase tracking-widest px-4 py-8 text-center"
+						id="services">
+						Our Core Services
+					</h4>
+				</div>
+				<section class="w-full max-w-[960px] px-6 pb-24">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+						<div
+							class="flex flex-col gap-4 p-8 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark shadow-sm">
+							<div class="flex items-center gap-3">
+								<span class="material-symbols-outlined text-primary text-3xl">cloud</span>
+								<h3 class="text-[#111418] dark:text-white text-xl font-bold">Cloud Infrastructure</h3>
+							</div>
+							<p class="text-[#617589] dark:text-gray-400 text-base leading-relaxed">
+								Architecting resilient, scalable cloud environments tailored to your specific
+								operational needs. We focus on high availability and cost-efficiency.
+							</p>
+						</div>
+						<div
+							class="flex flex-col gap-4 p-8 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark shadow-sm">
+							<div class="flex items-center gap-3">
+								<span class="material-symbols-outlined text-primary text-3xl">shield_lock</span>
+								<h3 class="text-[#111418] dark:text-white text-xl font-bold">Cybersecurity Audits</h3>
+							</div>
+							<p class="text-[#617589] dark:text-gray-400 text-base leading-relaxed">
+								Comprehensive vulnerability assessments and compliance checks to protect your enterprise
+								assets and maintain stakeholder trust.
+							</p>
+						</div>
+						<div
+							class="flex flex-col gap-4 p-8 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark shadow-sm">
+							<div class="flex items-center gap-3">
+								<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+								<h3 class="text-[#111418] dark:text-white text-xl font-bold">Custom Software Development
+								</h3>
+							</div>
+							<p class="text-[#617589] dark:text-gray-400 text-base leading-relaxed">
+								Bespoke software solutions engineered for performance. From legacy modernization to new
+								product development.
+							</p>
+						</div>
+						<div
+							class="flex flex-col gap-4 p-8 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark shadow-sm">
+							<div class="flex items-center gap-3">
+								<span class="material-symbols-outlined text-primary text-3xl">transform</span>
+								<h3 class="text-[#111418] dark:text-white text-xl font-bold">Digital Transformation
+									Strategy</h3>
+							</div>
+							<p class="text-[#617589] dark:text-gray-400 text-base leading-relaxed">
+								Guiding your business through the complexities of digital evolution with a data-driven,
+								methodical roadmap.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="w-full bg-white dark:bg-[#151d28] py-24 flex justify-center" id="approach">
+					<div class="max-w-[960px] w-full px-6 flex flex-col gap-16 @container">
+						<div class="flex flex-col gap-4 text-center items-center">
+							<h2
+								class="text-[#111418] dark:text-white text-3xl font-black leading-tight @[480px]:text-4xl max-w-[720px]">
+								Our Methodical Approach
+							</h2>
+							<p class="text-[#617589] dark:text-gray-400 text-base font-normal max-w-[600px]">
+								We believe in precision, clarity, and long-term stability. Our process is designed to
+								minimize risk while maximizing technological impact.
+							</p>
+						</div>
+						<div class="grid grid-cols-1 @[640px]:grid-cols-3 gap-8">
+							<div
+								class="flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark/50 transition-all hover:shadow-lg">
+								<div
+									class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+									<span class="material-symbols-outlined">analytics</span>
+								</div>
+								<div class="flex flex-col gap-2">
+									<h3 class="text-[#111418] dark:text-white text-lg font-bold">Strategic Planning</h3>
+									<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">We map out your
+										digital future with forensic precision.</p>
+								</div>
+							</div>
+							<div
+								class="flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark/50 transition-all hover:shadow-lg">
+								<div
+									class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+									<span class="material-symbols-outlined">verified_user</span>
+								</div>
+								<div class="flex flex-col gap-2">
+									<h3 class="text-[#111418] dark:text-white text-lg font-bold">Secure Execution</h3>
+									<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">Implementing
+										robust security protocols at every single step.</p>
+								</div>
+							</div>
+							<div
+								class="flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark/50 transition-all hover:shadow-lg">
+								<div
+									class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+									<span class="material-symbols-outlined">support_agent</span>
+								</div>
+								<div class="flex flex-col gap-2">
+									<h3 class="text-[#111418] dark:text-white text-lg font-bold">Ongoing Support</h3>
+									<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">Proactive
+										maintenance to keep your business running smoothly.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="w-full max-w-[960px] px-6 py-24 text-center" id="contact">
+					<div class="flex flex-col items-center gap-8">
+						<h2 class="text-[#111418] dark:text-white text-3xl font-bold">Ready to modernize your
+							infrastructure?</h2>
+						<div class="flex gap-4">
+							<a role="button" href="tel:+919946706406"
+								class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold transition-all hover:shadow-xl hover:-translate-y-1">
+								Call
+							</a>
+							<a role="button" href="https://wa.me/919946706406"
+								class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border border-gray-300 dark:border-gray-700 bg-transparent text-[#111418] dark:text-white text-lg font-bold transition-all hover:bg-gray-50 dark:hover:bg-gray-800 hover:-translate-y-1">
+								WhatsApp
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer
+				class="w-full py-12 border-t border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center bg-white dark:bg-background-dark">
+				<p class="text-[#617589] dark:text-gray-500 text-xs font-medium tracking-wide">
+					Information provided by the business owner.
+				</p>
+			</footer>
+		</div>
+	</div>
+
+</body>
+
+</html>
