@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>404 - Page Not Found | BZNS</title>
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet" />
+	<script id="tailwind-config">
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					colors: {
+						"primary": "#137fec",
+						"background-light": "#f6f7f8",
+						"background-dark": "#101922",
+						"slate-accent": "#e2e8f0"
+					},
+					fontFamily: {
+						"display": ["Inter", "sans-serif"]
+					},
+					borderRadius: {
+						"DEFAULT": "0.25rem",
+						"lg": "0.5rem",
+						"xl": "0.75rem",
+						"full": "9999px"
+					},
+				},
+			},
+		}
+	</script>
+	<style>
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+
+		.material-symbols-outlined {
+			font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+		}
+	</style>
+</head>
+
+<body class="bg-white dark:bg-background-dark text-[#111418] dark:text-white transition-colors duration-300">
+	<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+		<div class="layout-container flex h-full grow flex-col">
+			<header
+				class="flex flex-col items-center justify-center border-b border-solid border-gray-100 dark:border-gray-800 px-10 py-8">
+				<div class="flex flex-col items-center gap-6 max-w-[960px] w-full text-primary">
+					<div class="flex items-center gap-2">
+						<div class="size-8">
+							<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+								<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V44Z"
+									fill-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h2 class="text-[#111418] dark:text-white text-2xl font-black leading-tight tracking-tight">
+							BZNS</h2>
+					</div>
+				</div>
+			</header>
+			<main class="flex flex-1 flex-col items-center justify-center px-6 py-20">
+				<div class="max-w-[600px] w-full text-center flex flex-col items-center">
+					<div class="relative mb-8">
+						<span
+							class="text-[12rem] font-black leading-none text-slate-accent dark:text-gray-800 opacity-50 select-none">404</span>
+						<div class="absolute inset-0 flex items-center justify-center">
+							<span class="material-symbols-outlined text-primary text-7xl">error_outline</span>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4">
+						<h1 class="text-[#111418] dark:text-white text-4xl font-black tracking-tight">System Path Not
+							Found</h1>
+						<p class="text-[#617589] dark:text-gray-400 text-lg font-normal leading-relaxed">
+							The page you are looking for does not exist.
+						</p>
+					</div>
+					<div class="flex flex-col sm:flex-row gap-4 mt-12 w-full justify-center">
+						<a class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold transition-all hover:bg-primary/90 hover:shadow-lg"
+							href="/">
+							Return to Home
+						</a>
+						<a role="button" href="https://wa.me/919946706406"
+							class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border border-gray-300 dark:border-gray-700 bg-transparent text-[#111418] dark:text-white text-base font-bold transition-all hover:bg-gray-50 dark:hover:bg-gray-800">
+							Contact Support
+					</a>
+					</div>
+					<div
+						class="mt-16 flex items-center gap-3 text-xs font-mono text-gray-400 uppercase tracking-widest">
+						<span class="w-8 h-[1px] bg-gray-200 dark:bg-gray-800"></span>
+						<span>Error Code: 0x404_NOT_FOUND</span>
+						<span class="w-8 h-[1px] bg-gray-200 dark:bg-gray-800"></span>
+					</div>
+				</div>
+			</main>
+			<footer
+				class="w-full py-12 border-t border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center">
+				<p class="text-[#617589] dark:text-gray-500 text-xs font-medium tracking-wide">
+					&copy; 2026 Penqn.in
+				</p>
+			</footer>
+		</div>
+	</div>
+
+</body>
+
+</html>
