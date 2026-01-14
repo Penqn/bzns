@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const app = express();
 const RES_DIR = path.join(__dirname, "res");
+app.use('/assets', express.static(path.join(__dirname, 'public')));
 
 app.get("/:biz", (req, res) => {
 	const biz = req.params.biz;
