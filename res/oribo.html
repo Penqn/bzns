@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Oribo International - Nature Inspired Wellness</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Icons&amp;display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+	<script>
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					colors: {
+						primary: "#2D5A27", // Forest Green from the logo
+						accent: "#D22E2E", // Red from the logo O
+						"background-light": "#F8FAF8",
+						"background-dark": "#0F170F",
+					},
+					fontFamily: {
+						display: ["Playfair Display", "serif"],
+						sans: ["Inter", "sans-serif"],
+					},
+					borderRadius: {
+						DEFAULT: "0.75rem",
+					},
+				},
+			},
+		};
+	</script>
+	<style type="text/tailwindcss">
+		.hero-gradient {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.05) 0%, rgba(45, 90, 39, 0) 100%);
+        }
+        .slide-in {
+            animation: slideIn 0.8s ease-out forwards;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body
+	class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-sans transition-colors duration-300">
+	<header
+		class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+		<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+			<div class="flex items-center gap-2">
+				<div
+					class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+					O</div>
+				<span class="font-display text-2xl font-bold tracking-tight text-primary">ORIBO <span
+						class="text-accent">INTERNATIONAL</span></span>
+			</div>
+			<nav class="hidden md:flex items-center gap-8 font-medium">
+				<a class="hover:text-primary transition-colors" href="#home">Home</a>
+				<a class="hover:text-primary transition-colors" href="#products">Products</a>
+				<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+			</nav>
+			<div class="flex items-center gap-3">
+				<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+					onclick="document.documentElement.classList.toggle('dark')">
+					<span class="material-symbols-outlined text-2xl leading-none">dark_mode</span>
+				</button>
+				<a class="hidden sm:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full font-semibold hover:opacity-90 transition-all shadow-lg shadow-primary/20"
+					href="tel:+919846717410">
+					<span class="material-symbols-outlined text-lg">call</span>
+					Call Us
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="hero-gradient min-h-[85vh] flex items-center pt-12 pb-24 px-6" id="home">
+			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+				<div class="slide-in">
+					<span
+						class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-sm mb-6 uppercase tracking-wider">Nature
+						Inspired Wellness</span>
+					<h1 class="font-display text-5xl lg:text-7xl font-bold leading-tight mb-6">
+						Revitalize Your <br />
+						<span class="text-primary italic">Body, Mind &amp; Spirit.</span>
+					</h1>
+					<p class="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-lg leading-relaxed">
+						Discover the power of Moringa and Curcumin with Oribo International's premium wellness range.
+						Crafted from the purest ingredients to boost your immunity and overall health.
+					</p>
+					<div class="flex flex-wrap gap-4">
+						<a class="flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-green-500/20"
+							href="https://wa.me/919846717410">
+							<span class="material-symbols-outlined">chat</span>
+							WhatsApp Us
+						</a>
+						<a class="flex items-center gap-3 border-2 border-primary text-primary dark:text-slate-200 px-8 py-4 rounded-full font-bold text-lg hover:bg-primary hover:text-white transition-all"
+							href="#products">
+							Explore Products
+						</a>
+					</div>
+				</div>
+				<div class="relative">
+					<div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative group bg-white">
+						<img alt="Oribo International Product Range" class="w-full h-full object-cover"
+							src="assets/images/oribo/hero.webp" />
+						<div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
+					</div>
+					<div
+						class="absolute -top-6 -right-6 w-32 h-32 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-4 flex flex-col items-center justify-center animate-bounce duration-[3000ms]">
+						<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+						<span
+							class="text-[10px] font-bold uppercase tracking-tighter mt-2 text-center text-slate-800 dark:text-slate-200">100%
+							Organic</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-24 px-6 bg-white dark:bg-slate-900/50" id="products">
+			<div class="max-w-7xl mx-auto">
+				<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+					<div>
+						<h2 class="font-display text-4xl lg:text-5xl font-bold mb-4">Our Premium Products</h2>
+						<p class="text-slate-500 dark:text-slate-400 max-w-xl">Pure, potent, and proven solutions for
+							your daily wellness and household hygiene needs.</p>
+					</div>
+					<!-- <div class="flex gap-2">
+						<button
+							class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+							<span class="material-symbols-outlined">chevron_left</span>
+						</button>
+						<button
+							class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+							<span class="material-symbols-outlined">chevron_right</span>
+						</button>
+					</div> -->
+				</div>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div
+						class="group bg-white dark:bg-slate-800 rounded-3xl p-6 border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all hover:-translate-y-2">
+						<div
+							class="aspect-square rounded-2xl bg-slate-50 dark:bg-slate-900 mb-6 overflow-hidden flex items-center justify-center p-8">
+							<img alt="Curcumin Plus Capsules"
+								class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+								src="assets/images/oribo/curcumin.webp" />
+						</div>
+						<span class="text-xs font-bold text-accent uppercase tracking-widest">Capsule</span>
+						<h3 class="font-display text-2xl font-bold mt-2 mb-3">Curcumin Plus</h3>
+						<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 line-clamp-3">Enhanced antioxidant
+							formula with bio-available curcumin to support joint health and natural defenses.</p>
+						<!-- <div class="flex items-center justify-between">
+							<span class="text-2xl font-bold text-primary">₹599</span>
+							<button
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-full hover:scale-110 transition-transform">
+								<span class="material-symbols-outlined text-base">add</span>
+							</button>
+						</div> -->
+					</div>
+					<div
+						class="group bg-white dark:bg-slate-800 rounded-3xl p-6 border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all hover:-translate-y-2">
+						<div
+							class="aspect-square rounded-2xl bg-slate-50 dark:bg-slate-900 mb-6 overflow-hidden flex items-center justify-center p-8">
+							<img alt="Moringa Capsules"
+								class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+								src="assets/images/oribo/moringa_oleifera_lam.webp" />
+						</div>
+						<span class="text-xs font-bold text-primary uppercase tracking-widest">Capsule</span>
+						<h3 class="font-display text-2xl font-bold mt-2 mb-3">Moringa Oleifera Lam</h3>
+						<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 line-clamp-3">Nutrient-dense capsules
+							containing the miracle of nature to boost energy levels and provide essential vitamins.</p>
+						<!-- <div class="flex items-center justify-between">
+							<span class="text-2xl font-bold text-primary">₹450</span>
+							<button
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-full hover:scale-110 transition-transform">
+								<span class="material-symbols-outlined text-base">add</span>
+							</button>
+						</div> -->
+					</div>
+					<div
+						class="group bg-white dark:bg-slate-800 rounded-3xl p-6 border border-slate-100 dark:border-slate-700 hover:shadow-2xl transition-all hover:-translate-y-2">
+						<div
+							class="aspect-square rounded-2xl bg-slate-50 dark:bg-slate-900 mb-6 overflow-hidden flex items-center justify-center p-8">
+							<img alt="Moringa Bark Oil"
+								class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+								src="assets/images/oribo/moringa_bark_oil.webp" />
+						</div>
+						<span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Oil</span>
+						<h3 class="font-display text-2xl font-bold mt-2 mb-3">Moringa Bark Oil</h3>
+						<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 line-clamp-3">Therapeutic grade oil
+							for skin nourishment and pain relief. 100% natural extraction process.</p>
+						<!-- <div class="flex items-center justify-between">
+							<span class="text-2xl font-bold text-primary">₹325</span>
+							<button
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-full hover:scale-110 transition-transform">
+								<span class="material-symbols-outlined text-base">add</span>
+							</button>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-20 px-6">
+			<div class="max-w-7xl mx-auto bg-primary rounded-[3rem] p-8 lg:p-16 text-white overflow-hidden relative">
+				<div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<h2 class="font-display text-4xl lg:text-5xl font-bold mb-6">Hygiene Matters Too.</h2>
+						<p class="text-white/80 text-lg mb-8 leading-relaxed">
+							Our chemical-free Veg-Fru Wash and Fish Wash ensure that your family eats only what's
+							healthy. Remove pesticides, bacteria, and wax coating naturally.
+						</p>
+						<div class="flex gap-4">
+							<!-- <button
+								class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition-colors">Shop
+								Cleaning Range</button>
+							<button
+								class="border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">Learn
+								More</button> -->
+						</div>
+					</div>
+					<div class="flex justify-center gap-1">
+						<div
+							class="w-48 h-64 bg-white/10 backdrop-blur rounded-2xl flex flex-col items-center justify-center transform -rotate-12" style="background:url('assets/images/oribo/fish_wash.webp') center / contain no-repeat;">
+							<!-- <span class="material-symbols-outlined text-4xl mb-2 opacity-50">sanitizer</span>
+							<span
+								class="text-xs font-bold opacity-50 uppercase tracking-tighter text-center px-4">Veg-Fru
+								Wash</span> -->
+								
+						</div>
+						<div
+							class="w-48 h-64 bg-white/10 backdrop-blur rounded-2xl flex flex-col items-center justify-center transform rotate-12 translate-y-8"  style="background:url('assets/images/oribo/veg_fru_wash.webp') center / contain no-repeat;">
+							<!-- <span class="material-symbols-outlined text-4xl mb-2 opacity-50">clean_hands</span>
+							<span class="text-xs font-bold opacity-50 uppercase tracking-tighter text-center px-4">Fish
+								Wash</span> -->
+						</div>
+					</div>
+				</div>
+				<div class="absolute -top-24 -right-24 w-64 h-64 bg-white/5 rounded-full"></div>
+				<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+			</div>
+		</section>
+		<section class="py-24 px-6 bg-slate-50 dark:bg-background-dark" id="contact">
+			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+				<div>
+					<h2 class="font-display text-4xl font-bold mb-8">Get In Touch</h2>
+					<div class="space-y-8">
+						<div class="flex items-start gap-5">
+							<div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+								<span class="material-symbols-outlined text-primary">location_on</span>
+							</div>
+							<div>
+								<h4 class="font-bold text-lg mb-1">Visit Us</h4>
+								<p class="text-slate-500 dark:text-slate-400">Mansoor <br> Pattambi</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-5">
+							<div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+								<span class="material-symbols-outlined text-primary">phone</span>
+							</div>
+							<div>
+								<h4 class="font-bold text-lg mb-1">Call Us</h4>
+								<p class="text-slate-500 dark:text-slate-400">+91 98467 17410</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-5">
+							<div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+								<span class="material-symbols-outlined text-primary">mail</span>
+							</div>
+							<div>
+								<h4 class="font-bold text-lg mb-1">Email Support</h4>
+								<p class="text-slate-500 dark:text-slate-400">demo_email</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="rounded-[2.5rem] overflow-hidden shadow-xl min-h-[450px] relative border-8 border-white dark:border-slate-800">
+					<iframe allowfullscreen="" class="absolute inset-0 w-full h-full border-0"
+						loading="lazy"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15676.295792694827!2d76.17976781261999!3d10.805648329517165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c5d32fa26e1b%3A0x42cdd17f5e236751!2sPattambi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1768555326982!5m2!1sen!2sin">
+					</iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 py-12 px-6">
+		<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+			<div class="flex items-center gap-2">
+				<div
+					class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
+					O</div>
+				<span class="font-display text-xl font-bold tracking-tight text-primary">ORIBO <span
+						class="text-accent">INTERNATIONAL</span></span>
+			</div>
+			<p class="text-slate-400 text-sm">Information provided by the business owner.</p>
+			<div class="flex gap-6">
+				<!-- <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+						class="material-symbols-outlined">public</span></a>
+				<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+						class="material-symbols-outlined">photo_camera</span></a>
+				<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+						class="material-symbols-outlined">alternate_email</span></a> -->
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
