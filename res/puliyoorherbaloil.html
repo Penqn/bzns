@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Puliyoor Herbal Oil - Traditional Trust</title>
+	<meta content="Traditional Hair Care Herbal Oil for the entire family." name="description" />
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Icons&amp;display=swap"
+		rel="stylesheet" />
+	<script>
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					colors: {
+						primary: "#006837", // Traditional Green from the logo
+						gold: {
+							light: "#F9D423",
+							dark: "#B8860B"
+						},
+						"background-light": "#FDFCF0", // Soft cream for traditional feel
+						"background-dark": "#0A0A0A",
+					},
+					fontFamily: {
+						display: ["Playfair Display", "serif"],
+						sans: ["Inter", "sans-serif"],
+					},
+					borderRadius: {
+						DEFAULT: "0.5rem",
+					},
+				},
+			},
+		};
+	</script>
+	<style>
+		.testimonial-scroll {
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+
+		.testimonial-scroll::-webkit-scrollbar {
+			display: none;
+		}
+
+		.gold-gradient {
+			background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%);
+		}
+
+		.hero-pattern {
+			background-image: radial-gradient(circle at 2px 2px, rgba(0, 104, 55, 0.05) 1px, transparent 0);
+			background-size: 24px 24px;
+		}
+	</style>
+</head>
+
+<body
+	class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300">
+	<nav
+		class="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between items-center h-20">
+				<div class="flex items-center gap-2">
+					
+					<span class="text-2xl font-display font-bold text-primary dark:text-white">Puliyoor Herbal Oil</span>
+				</div>
+				<div class="hidden md:flex items-center space-x-8">
+					<a class="hover:text-primary transition-colors" href="#">Home</a>
+					<a class="hover:text-primary transition-colors" href="#testimonials">Testimonials</a>
+					<a class="hover:text-primary transition-colors" href="#video">Experience</a>
+					<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+					<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800" id="theme-toggle">
+						<span class="material-icons text-xl dark:hidden">dark_mode</span>
+						<span class="material-icons text-xl hidden dark:inline">light_mode</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<header class="relative overflow-hidden hero-pattern">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+				<div class="space-y-8 order-2 lg:order-1">
+					<div
+						class="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-gold-light font-semibold text-sm">
+						<span class="material-icons text-sm mr-2">verified</span>
+						100% Traditional Herbal Formula
+					</div>
+					<h1
+						class="text-5xl md:text-7xl font-display font-bold text-slate-900 dark:text-white leading-tight">
+						Puliyoor <br />
+						<span class="text-primary">Herbal Oil</span>
+					</h1>
+					<p class="text-xl md:text-2xl text-slate-600 dark:text-slate-300 font-light leading-relaxed">
+						A Family Herbal Tonic <br />
+						<span class="italic">(For Women, Men &amp; Children)</span>
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5c] text-white px-8 py-4 rounded-full font-bold shadow-lg transition-transform hover:-translate-y-1"
+							href="https://wa.me/919447388170">
+							<span class="material-icons">chat</span>
+							WhatsApp Now
+						</a>
+						<a class="flex items-center justify-center gap-2 bg-[#FF9900] hover:bg-[#e68a00] text-white px-8 py-4 rounded-full font-bold shadow-lg transition-transform hover:-translate-y-1"
+							href="https://www.amazon.in/Puliyoor-Herbal-Center-Oil-100ml/dp/B07D9TPKV6">
+							<span class="material-icons">shopping_cart</span>
+							Buy on Amazon
+						</a>
+					</div>
+				</div>
+				<div class="order-1 lg:order-2 flex justify-center">
+					<div class="relative max-w-sm md:max-w-md lg:max-w-full">
+						<div class="absolute -inset-4 bg-primary/5 dark:bg-white/5 rounded-[3rem] -rotate-3 blur-2xl">
+						</div>
+						<img alt="Puliyoor Hair Oil Brand Ambassador and Product Details"
+							class="relative rounded-2xl shadow-2xl w-full h-auto object-contain border-4 border-white dark:border-slate-800"
+							src="assets/images/puliyoorherbaloil/hero.webp" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- <section class="py-20 bg-white dark:bg-slate-900/50" id="testimonials">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-12">
+				<h2 class="text-4xl font-display font-bold mb-4">What Our Users Say</h2>
+				<div class="w-24 h-1 bg-primary mx-auto"></div>
+			</div>
+			<div class="testimonial-scroll flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory px-4">
+				<div
+					class="flex-shrink-0 w-80 md:w-96 snap-center p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700">
+					<div class="flex text-gold-dark mb-4">
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+					</div>
+					<p class="text-slate-600 dark:text-slate-300 italic mb-6">"I've tried many oils, but Puliyoor is
+						different. It's so calming and has definitely reduced my hair fall within a month."</p>
+					<div class="flex items-center gap-4">
+						<div
+							class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+							SM</div>
+						<div>
+							<h4 class="font-bold">S. Murali</h4>
+							<p class="text-sm text-slate-500">Loyal Customer</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex-shrink-0 w-80 md:w-96 snap-center p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700">
+					<div class="flex text-gold-dark mb-4">
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+					</div>
+					<p class="text-slate-600 dark:text-slate-300 italic mb-6">"My whole family uses it. Even for my
+						kids, it's very gentle and smells like real herbs. Highly recommend this traditional blend."</p>
+					<div class="flex items-center gap-4">
+						<div
+							class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+							AP</div>
+						<div>
+							<h4 class="font-bold">Anjali P.</h4>
+							<p class="text-sm text-slate-500">Verified Buyer</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex-shrink-0 w-80 md:w-96 snap-center p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700">
+					<div class="flex text-gold-dark mb-4">
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+					</div>
+					<p class="text-slate-600 dark:text-slate-300 italic mb-6">"The heritage behind this brand shows in
+						the quality. It's a premium product at an honest price. Truly a family tonic."</p>
+					<div class="flex items-center gap-4">
+						<div
+							class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+							RK</div>
+						<div>
+							<h4 class="font-bold">Rajesh Kumar</h4>
+							<p class="text-sm text-slate-500">Customer</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex-shrink-0 w-80 md:w-96 snap-center p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700">
+					<div class="flex text-gold-dark mb-4">
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+						<span class="material-icons">star</span>
+					</div>
+					<p class="text-slate-600 dark:text-slate-300 italic mb-6">"Finally found an authentic herbal oil
+						that isn't too greasy. My hair feels much stronger and healthier now."</p>
+					<div class="flex items-center gap-4">
+						<div
+							class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+							VS</div>
+						<div>
+							<h4 class="font-bold">Vinitha S.</h4>
+							<p class="text-sm text-slate-500">Regular User</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section class="py-20 bg-slate-50 dark:bg-slate-900" id="video">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-12">
+				<h2 class="text-4xl font-display font-bold mb-4 text-primary dark:text-white">Why Our Oil</h2>
+				<p class="text-slate-600 dark:text-slate-400">Discover why Puliyoor Herbal Oil is the best choice for you.</p>
+			</div>
+			<div class="aspect-video w-full bg-black rounded-3xl overflow-hidden shadow-2xl relative group">
+				<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen="" class="w-full h-full" frameborder="0"
+					src="https://www.youtube.com/embed/0WhxAe_81lM?autoplay=1&amp;mute=1&amp;loop=1&amp;"
+					title="Puliyoor Hair Oil Presentation">
+				</iframe>
+			</div>
+		</div>
+	</section>
+	<section class="py-20 bg-white dark:bg-black" id="contact">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+				<div class="space-y-10">
+					<div>
+						<h2 class="text-4xl font-display font-bold mb-6">Get in Touch</h2>
+						<p class="text-slate-600 dark:text-slate-400 max-w-md">Have questions about our herbal tonic?
+							Our team is here to help you choose the best care for your family's hair.</p>
+					</div>
+					<div class="space-y-6">
+						<div class="flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+								<span class="material-icons">location_on</span>
+							</div>
+							<div>
+								<h4 class="font-bold text-lg mb-1">Our Address</h4>
+								<p class="text-slate-600 dark:text-slate-400">Vaidya Nagar, Panacode
+									PO,<br />Thiruvananthapuram, Kerala</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+								<span class="material-icons">phone_iphone</span>
+							</div>
+							<div>
+								<h4 class="font-bold text-lg mb-1">Mobile &amp; WhatsApp</h4>
+								<p class="text-slate-600 dark:text-slate-400">+91 94473 88170<br />+91 94471 28649</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+								<span class="material-icons">email</span>
+							</div>
+							<div>
+								<h4 class="font-bold text-lg mb-1">Email Support</h4>
+								<p class="text-slate-600 dark:text-slate-400">
+									girishpuliyoor@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="h-[400px] lg:h-full min-h-[400px] rounded-3xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-800">
+					<iframe allowfullscreen="" class="w-full h-full"
+						loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7889.443285904801!2d77.04606632361703!3d8.622699677234626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05c82ccc19a093%3A0x82925c914b5eb3f8!2sPanacode%2C%20Kerala%20695542!5e0!3m2!1sen!2sin!4v1768620193258!5m2!1sen!2sin">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+				<div class="flex items-center gap-2">
+					<!-- <div
+						class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white gold-gradient">
+						<span class="material-icons text-sm">spa</span>
+					</div> -->
+					<!-- <span class="text-xl font-display font-bold text-white">Puliyoor Hair Oil</span> -->
+				</div>
+				<p class="text-sm">Information provided by the
+					business owner.</p>
+				<div></div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		const themeToggle = document.getElementById('theme-toggle');
+		const html = document.documentElement;
+		// Check for saved theme
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			html.classList.add('dark');
+		} else {
+			html.classList.remove('dark');
+		}
+		themeToggle.addEventListener('click', () => {
+			if (html.classList.contains('dark')) {
+				html.classList.remove('dark');
+				localStorage.theme = 'light';
+			} else {
+				html.classList.add('dark');
+				localStorage.theme = 'dark';
+			}
+		});
+	</script>
+
+</body>
+
+</html>
